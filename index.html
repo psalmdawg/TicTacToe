@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TicTacToe</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='http://fonts.googleapis.com/css?family=Sansita+One' rel='stylesheet'>
+
+</head>
+<body>
+<h1>Tic Tac Toe</h1>
+<!-- <div id = "left"> -->
+<div id="player">
+  <div id="playerChoice">
+  X To Move!
+  </div>
+
+</div>
+  <div id ="boardB">
+    <table>
+    <tr>
+      <td class="box" id='tl'></td>
+      <td class="box" id='tm'></td>
+      <td class="box" id='tr'></td>
+    </tr>
+    <tr>
+      <td class="box" id='ml'></td>
+      <td class="box" id='mm'></td>
+      <td class="box" id='mr'></td>
+    </tr>
+    <tr>
+      <td class="box" id='bl'></td>
+      <td class="box" id='bm'></td>
+      <td class="box" id='br'></td>
+    </tr>
+    </table>
+  </div>
+<!-- </div>   -->
+<div class ="winnersCircle">
+  <div id='xWinCounter'></div>
+  <div id='oWinCounter'></div>
+</div>
+<div id="winner">
+FIRST TO FIVE!
+</div>
+<button id="reset" value="Reset">NEXT ROUND</button>
+<button id="resetAll" value="Reset">RESET ALL</button>
+<!-- <input id="reset" type="button" value="Reset" /> -->
+</body>
+<script src="app.js"></script>
+</html>

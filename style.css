@@ -1,0 +1,130 @@
+html {
+  width:100%;
+  background-color: #E8E8E8 ;
+}
+
+body {
+  background-color: green;
+  width: 960px;
+  /*height: 100%;*/
+  margin: 0 auto;
+  border: black solid 5px;
+  border-radius: 20px;
+  text-align: center;
+  color: black;
+	font: 25px 'Sansita One';
+	text-shadow: 1px 1px 0px yellow, 1px 1px 0px yellow;
+}
+
+button {
+  height: 50px;
+  width: 194px;
+  border: black 5px solid;
+  margin-top: 20px;
+  background-color: #E8E8E8 ;
+  font-size: 35px;
+  border-radius: 20px;
+  text-align: center;
+  padding-bottom: 2px;
+  font: 25px 'Sansita One';
+  box-shadow: 6px 6px 5px #393D48;
+  margin-bottom: 50px;
+  color: black;
+  text-shadow: 1px 1px 0px yellow, 1px 1px 0px yellow;
+}
+
+table {
+  margin-bottom: 20px;
+}
+
+h1{
+  border: black solid 5px;
+  border-radius: 15px;
+  background-color: #E8E8E8;
+  margin: 25px auto;
+  width: 335px;
+  box-shadow: 6px 6px 5px #393D48;
+}
+
+table td{
+  /*text-align: center;*/
+  /*margin-right: auto;*/
+  /*margin-left: auto;*/
+  font-size: 86px;
+}
+#player {
+/*display: inline-block;*/
+border: black 5px solid;
+border-radius: 20px;
+padding: 20px;
+/*position: absolute;*/
+margin-left: 50px;
+margin-top: 5px;
+background-color: #E8E8E8;
+font-size: 40px;
+float:left;
+width: 157px;
+height:100px;
+box-shadow: 6px 6px 5px #393D48;
+
+}
+
+#boardB {
+  display: inline-block;
+  /*margin-right: 100px;*/
+  margin-left: -260px;
+  /*float:left:*/
+  /*box-shadow: 10px 10px 5px #888888;*/
+  color: green;
+
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-indent:
+}
+
+.winnersCircle {
+  display: inline-block;
+  border: black 5px solid;
+  border-radius: 20px;
+  padding: 20px;
+  position: absolute;
+  margin-left: 40px;
+  margin-top: 5px;
+  background-color: #E8E8E8;
+  font-size: 30px;
+  width: 157px;
+  height:100px;
+  box-shadow: 6px 6px 5px #393D48;
+}
+
+td {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-radius: 20px;
+  border: 5px double black;
+  background-color: green;
+}
+
+#winner{
+  width: 335px;
+  height: 50px;
+  border: black solid 5px;
+  /*margin-top: 100px;*/
+  margin: auto;
+  /*margin: 50px;*/
+  border-radius: 20px;
+  padding:20px;
+  background-color: #E8E8E8;
+  font-size:40px;
+  /*clear:both;*/
+  box-shadow: 6px 6px 5px #393D48;
+}
+
+
+#xWinCounter{
+  margin-bottom: 25px;
+}
+
+#oWinCounter{
+
+}

@@ -28,7 +28,7 @@ winCount(); //needed so that scores (0-0) display when pages loads.
 //checks and increments the turns and changes the background
 board.addEventListener('click', function(event) {
         var cell = event.target;
-    if(cell.className === "box" && cell.innerHTML !== "X" && cell.innerHTML !== "O" && xWins < 5 && oWins < 6){
+    if(cell.className === "box" && cell.innerHTML !== "X" && cell.innerHTML !== "O" && xWins < 5 && oWins < 5){
       console.log(xWins + " " + oWins)
        if (playerTurn === 0) {
           cell.innerHTML = 'X',
@@ -42,7 +42,7 @@ board.addEventListener('click', function(event) {
           document.getElementById('playerChoice').innerHTML = 'X to Move!';
           playerTurn --;
           // console.log('CHECK ' +playerTurn + ' <= should be zero')
-      }} else {}
+      }} else {return;}
      }
 );
 
@@ -54,7 +54,7 @@ board.addEventListener('click', function(event) {
         cells[cell.id] = cell.innerHTML;
         // console.log(event.target.id)
                       // console.log(cells)
-
+if ( xWins < 5 || oWins < 5) {
       for(var prop in cells) {
           if(cells.hasOwnProperty(prop)) {
                 if(cells.tm === "X" && cells.tl === "X" && cells.tr === "X") {
@@ -155,7 +155,7 @@ board.addEventListener('click', function(event) {
                     return;
                 }
               }
-            }
+            }} else {console.log("should stop")}
   checkDraw();
   winCount();
 })

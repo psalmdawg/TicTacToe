@@ -26,8 +26,8 @@ var oWins = 0;
 var won = false;
 
 
-// winCount(); //needed so that scores (0-0) display when pages loads.
-//checks and increments the turns and changes the background
+
+// click event to increment the player turns and change the cell background.
 board.addEventListener('click', function(event) {
     if (won) {
       return;
@@ -47,7 +47,7 @@ board.addEventListener('click', function(event) {
           document.getElementById('playerChoice').innerHTML = 'X to Move!';
           playerTurn --;
           // console.log('CHECK ' +playerTurn + ' <= should be zero')
-      }} else {return;}
+      }} else {}
      }
 );
 
@@ -184,9 +184,9 @@ board.addEventListener('click', function(event) {
             }}
             else {console.log("should stop")}
   checkDraw();
-  // winCount();
-})
 
+})
+//TO CHECK IF THERE IS A DRAW
 function checkDraw() {
   var drawDraw = 0;
   Object.getOwnPropertyNames(cells).forEach(function(val) {
@@ -201,6 +201,7 @@ function checkDraw() {
   });
 }
 
+//TALLYS UP THE WINS
 function winCount(){
   console.log('someone won')
   won = true;
@@ -237,7 +238,7 @@ for(i=0;i<9;i++){
   document.getElementById('playerChoice').innerHTML = 'X To Move!';
 }
 })
-
+//RELOAD PAGE
 resetAll.addEventListener('click', function(event) {
   location.reload();
 } )

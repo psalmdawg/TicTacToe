@@ -37,7 +37,7 @@ board.addEventListener('click', function(event) {
       console.log(xWins + " " + oWins)
        if (playerTurn === 0) {
           cell.innerHTML = 'X',
-          cell.style.backgroundColor = 'blue';
+          cell.style.backgroundColor = 'black';
           document.getElementById('playerChoice').innerHTML = 'O To Move!';
           playerTurn ++;
           // console.log('CHECK ' + playerTurn + ' <= should be one ')
